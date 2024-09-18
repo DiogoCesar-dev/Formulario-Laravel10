@@ -1,0 +1,128 @@
+/* Definir a cor de fundo e o estilo da página */
+body {
+    background-color: #111; 
+    color: #fff; 
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Estilizar o contêiner principal */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #222; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Títulos do formulário */
+h1, h2 {
+    color: #fff; /* Cor do texto */
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Estilização de todos os inputs e selects */
+input[type="text"], input[type="email"], input[type="file"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px;
+    background-color: #333; 
+    color: #fff; 
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o botão de envio */
+button[type="submit"] {
+    background-color: #555; 
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+/* Estilo para hover no botão de envio */
+button[type="submit"]:hover {
+    background-color: #363636;
+}
+
+/* Estilo para os rótulos (labels) */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Estilo para as perguntas com múltipla escolha */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Estilo para o campo de captcha */
+.captcha {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.captcha img {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.captcha input {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Estilo para mensagens de aviso */
+.alerta-erro {
+    color: red;
+    font-weight: bold;
+}
+
+.alerta-sucesso {
+    color: #59a752;
+    text-align: center;
+}
+
+/* Estilizar o texto de instrução no topo */
+.instrucoes {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+    font-size: 1em;
+}
+
+span{
+    color: #ff0000;
+}
+.container .quadradinho{
+    background-color: white;
+}
+.container .quadradinho .texto {
+    width: 100%;   
+    height: 80px; 
+    padding: 10px; 
+   color: #555;
+}
+
+.tam-caixa{
+    width: 100%;   
+    height: 200px; 
+    padding: 10px; 
+    resize: none; 
+}
+
+.botao{
+    width: 100px;
+    height: 100px;
+}
+
