@@ -19,7 +19,7 @@ return new class extends Migration
             $table->enum('sistema', ['Sinfralog', 'Diário de Obras', 'Fiscalização', 'Outros']);
             $table->enum('perfil', ['Fiscal', 'Responsável Técnico', 'Supervisor(a)', 'Outros']);
             $table->text('duvida');
-            $table->text('upload_link')->nullable();
+            $table->longText('upload_link')->nullable();
             $table->timestamps();
         });
     }

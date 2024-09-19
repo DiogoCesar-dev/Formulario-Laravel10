@@ -57,8 +57,7 @@
                 <textarea class="tam-caixa" name="duvida" required></textarea>
 
                 <label for="upload_link">Faça upload das imagens e vídeos em uma pasta de Drive/Outlook e compartilhe o link</label>
-            
-                <input id="tam-caixa" class="tam-caixa"type="text" name="upload_link">
+                <textarea id="upload_link" class="tam-caixa" name="upload_link"></textarea>
 
                 <div class="botao"> 
                 <button type="submit">Enviar</button>
@@ -68,7 +67,7 @@
     </div>
     <script>
          ClassicEditor
-    .create(document.querySelector('#tam-caixa'), {
+    .create(document.querySelector('#upload_link'), {
          
     })
     .catch(error => {
