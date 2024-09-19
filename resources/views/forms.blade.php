@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Dúvidas</title>
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
 </head>
 <body>
     <div class="container">
@@ -50,17 +51,30 @@
                 <option value="Supervisor(a)">Supervisor(a)</option>
                 <option value="Outros">Outros</option>
             </select>
+            
+            <div>
+                <label for="duvida">Descreva sua dúvida *</label>
+                <textarea class="tam-caixa" name="duvida" required></textarea>
 
-            <label for="duvida">Descreva sua dúvida *</label>
-            <textarea class="tam-caixa" name="duvida" required></textarea>
+                <label for="upload_link">Faça upload das imagens e vídeos em uma pasta de Drive/Outlook e compartilhe o link</label>
+            
+                <input id="tam-caixa" class="tam-caixa"type="text" name="upload_link">
 
-            <label for="upload_link">Faça upload das imagens e vídeos em uma pasta de Drive/Outlook e compartilhe o link</label>
-            <input class="tam-caixa"type="text" name="upload_link">
-
-            <div class="botao"> 
+                <div class="botao"> 
                 <button type="submit">Enviar</button>
+                </div>
             </div>
         </form>
     </div>
+    <script>
+         ClassicEditor
+    .create(document.querySelector('#tam-caixa'), {
+         
+    })
+    .catch(error => {
+        console.error(error);
+    });
+</script>
 </body>
 </html>
+

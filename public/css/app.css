@@ -8,6 +8,7 @@ body {
 /* Estilizar o contêiner principal */
 .container {
     width: 50%;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
     background-color: #222; 
@@ -106,6 +107,7 @@ span{
 }
 .container .quadradinho{
     background-color: white;
+    border-radius: 10px;
 }
 .container .quadradinho .texto {
     width: 100%;   
@@ -117,12 +119,20 @@ span{
 .tam-caixa{
     width: 100%;   
     height: 200px; 
-    padding: 10px; 
+ 
     resize: none; 
 }
 
 .botao{
     width: 100px;
     height: 100px;
+    margin-top: 8px;
+}
+
+.ck-editor__editable_inline {
+    min-height: 300px; 
+    max-height: 500px; 
+    color: #555;
+    
 }
 
